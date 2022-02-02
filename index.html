@@ -5,8 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasec Test</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <?php
+    echo "My first PHP script!";
+    ?>
+    <!-- Main table displaying names -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+
+        </tbody>
+      </table>
+
+      <!-- Button to open popup -->
+      <button id="addButton">
+          Add New User
+      </button>
+
+
+      <!-- Popup for adding new Names -->
+      <div class="form-popup" id="newForm">
+        <form class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+
+      <!-- adding scripts from app.js -->
+      <script src="app.js"></script>
 </body>
 </html>
