@@ -12,7 +12,8 @@
     echo "My first PHP script!";
     ?>
     <!-- Main table displaying names -->
-    <table>
+    <div class="form-table">
+      <table class="table">
         <thead>
             <tr>
                 <th>First Name</th>
@@ -25,27 +26,29 @@
       </table>
 
       <!-- Button to open popup -->
-      <button id="addButton">
+      <button class="btn" id="addButton">
           Add New Name
       </button>
+    </div>
+    
 
 
-      <!-- Popup for adding new Names -->
-      <div id="newName">
-        <form>
+    <!-- Popup for adding new Names -->
+    <div class="form-popup" id="newName">
+      <form class="form-container">
       
-          <label for="firstName"><b>First Name</b></label>
-          <input type="text" placeholder="First Name" name="firstName" required id="firstNameInput">
+        <label for="firstName"><b>First Name</b></label>
+        <input type="text" placeholder="First Name" name="firstName" required id="firstNameInput">
       
-          <label for="Surname"><b>Surname</b></label>
-          <input type="text" placeholder="Surname" name="Surname" required id="surnameInput">
+        <label for="Surname"><b>Surname</b></label>
+        <input type="text" placeholder="Surname" name="Surname" required id="surnameInput">
       
-          <button type="button" id="confirmButton">Add</button>
-          <button type="button" id="cancelButton">Cancel</button>
-        </form>
-      </div>
+        <button type="button" class="btn" id="confirmButton">Add</button>
+        <button type="button" class="btn cancel" id="cancelButton">Cancel</button>
+      </form>
+    </div>
 
-      <!-- adding scripts from app.js -->
-      <script src="app.js"></script>
+    <!-- adding scripts from app.js -->
+    <script src="app.js"></script>
 </body>
 </html>
