@@ -15,8 +15,7 @@
     <table>
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Name</th>
+                <th>First Name</th>
                 <th>Surname</th>
             </tr>
         </thead>
@@ -27,23 +26,22 @@
 
       <!-- Button to open popup -->
       <button id="addButton">
-          Add New User
+          Add New Name
       </button>
 
 
       <!-- Popup for adding new Names -->
-      <div class="form-popup" id="newForm">
-        <form class="form-container">
-          <h1>Login</h1>
+      <div id="newName">
+        <form>
       
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <label for="firstName"><b>First Name</b></label>
+          <input type="text" placeholder="First Name" name="firstName" required id="firstNameInput">
       
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="Surname"><b>Surname</b></label>
+          <input type="text" placeholder="Surname" name="Surname" required id="surnameInput">
       
-          <button type="submit" class="btn">Login</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <button type="button" id="confirmButton">Add</button>
+          <button type="button" id="cancelButton">Cancel</button>
         </form>
       </div>
 
